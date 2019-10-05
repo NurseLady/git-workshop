@@ -11,17 +11,19 @@ Button buttonOff(PIN_BUTTON_OFF);
 Buzzer buzzer(PIN_BUZZER);
 
 int notes[] = {NOTE_A4, NOTE_SILENCE, NOTE_G4, NOTE_SILENCE};
+//int notes3[] = {NOTE_AS4, NOTE_D4, NOTE_G4, NOTE_AS4, NOTE_C5, NOTE_F4, NOTE_A4, NOTE_AS4, NOTE_SILENCE,
+//NOTE_G4, NOTE_AS4, NOTE_D5, NOTE_DS5, NOTE_SILENCE
 double durations[] = {8, 1, 4, 1};
 int melodyLength = 4;
 
-// maybe somewhere in the future we will have one more button...
-// #define PIN_BUTTON_MEL_TWO 4
-// Button buttonMelodyTwo(PIN_BUTTON_MEL_TWO);
+ //maybe somewhere in the future we will have one more button...
+ #define PIN_BUTTON_MEL_TWO 4
+ Button buttonMelodyTwo(PIN_BUTTON_MEL_TWO);
 
-// and the second melody
-// int notes2[] = {NOTE_C4, NOTE_SILENCE, NOTE_G4, NOTE_SILENCE};
-// double durations2[] = {4, 1, 4, 1};
-// int melodyLength2 = 4;
+ //and the second melody
+ int notes2[] = {NOTE_C4, NOTE_SILENCE, NOTE_G4, NOTE_SILENCE};
+ double durations2[] = {4, 1, 4, 1};
+ int melodyLength2 = 4;
 
 void setup()
 {
